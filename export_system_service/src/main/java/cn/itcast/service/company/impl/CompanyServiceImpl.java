@@ -17,4 +17,19 @@ public class CompanyServiceImpl implements CompanyService {
         List<Company> list = companyDao.findAll();
         return list;
     }
+
+    @Override
+    public void save(Company company) {
+        companyDao.save(company);
+    }
+
+    @Override
+    public void update(Company company) {
+        companyDao.update(company);
+    }
+
+    @Override
+    public Company findById(String id) {
+        return companyDao.findById(id);
+    }
 }

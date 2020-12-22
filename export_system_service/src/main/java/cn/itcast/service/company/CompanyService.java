@@ -14,4 +14,20 @@ public interface CompanyService {
      */
     List<Company> findAll();
 
+    /**
+     * 添加
+     */
+    void save(Company company);
+
+    /**
+     * 修改
+     * @param company
+     */
+    void update(Company company);
+
+    /**
+     * 根据id查询企业信息
+     * @param id
+     */
+    Company findById(String id);
 }
